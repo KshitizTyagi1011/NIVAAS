@@ -10,7 +10,7 @@
       <div class="col-lg-4 p-4">
         <h5 class="mb-3 text-white">Links</h5>
         <a href="index.php" class="d-inline-block mb-2 text-white text-decoration-none">Home</a><br>
-        <a href="#" class="d-inline-block mb-2 text-white text-decoration-none">Rooms</a><br>
+        <a href="rooms.php" class="d-inline-block mb-2 text-white text-decoration-none">Rooms</a><br>
         <a href="facilites.php" class="d-inline-block mb-2 text-white text-decoration-none">Facilites</a><br>
         <a href="contact.php" class="d-inline-block mb-2 text-white text-decoration-none">Contact us</a><br>
         <a href="about.php" class="d-inline-block mb-2 text-white text-decoration-none">About</a>
