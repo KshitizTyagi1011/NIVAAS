@@ -5,14 +5,14 @@
             echo"<script>
                 window.location.href='index.php';
             </script>";
+            exit;
         }
-        session_regenerate_id(true);
     }
     function redirect($url){
-        echo"
-            <script>window.location.href='$url';
-            </script>;
-        ";
+        echo"<script>
+            window.location.href='$url';
+            </script>";
+        exit;
     }
     function alert($type,$msg){
         $bs_class = ($type == "success") ? "alert-success" : "alert-danger"; 
