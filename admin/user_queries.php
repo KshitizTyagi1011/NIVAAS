@@ -55,7 +55,7 @@ if(isset($_GET['del'])){
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Admin Panel - User Queriess</title>
+    <title>Admin Panel - User Queries</title>
     <?php require('inc/links.php'); ?>
 </head>
 

@@ -159,7 +159,7 @@ function upd_contacts() {
 team_s_form.addEventListener('submit', function (e) {
     e.preventDefault();
     add_member();
-})
+});
 
 function add_member() {
     let data = new FormData();
@@ -188,12 +188,8 @@ function add_member() {
             member_picture_inp.value = '';
             get_members();
         }
-
-
     }
-
     xhr.send(data);
-
 }
 
 function get_members() {
