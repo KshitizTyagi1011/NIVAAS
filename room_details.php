@@ -5,8 +5,8 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Nivaas - ROOM DETAILS</title>
-  <?php require('inc/links.php');?>
+ <?php require('inc/links.php');?>
+ <title><?php echo $settings_r['site_title'] ?> - ROOM DETAILS</title>
 </head>
 
 <body class="bg-light">
