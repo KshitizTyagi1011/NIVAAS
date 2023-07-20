@@ -64,9 +64,9 @@ function get_all_rooms() {
     xhr.send('get_all_rooms');
 }
 
-window.onload = function () {
-    get_all_rooms();
-}
+// window.onload = function () {
+//     get_all_rooms();
+// }
 
 let edit_room_form = document.getElementById('edit_room_form');
 

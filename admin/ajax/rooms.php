@@ -92,7 +92,7 @@
                   data-bs-target='#room-images'>
                      <i class='bi bi-images'></i>
                   </button>
-                  <button type='button' onclick='remove_room($row[id])' class='btn btn-danger shadow-none btn-sm'>
+                  <button type='button' onclick='remove_user($row[id])' class='btn btn-danger shadow-none btn-sm'>
                      <i class='bi bi-trash'></i>
                   </button>
                </td>
