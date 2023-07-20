@@ -15,6 +15,10 @@
     define('ROOMS_FOLDER', 'rooms/');
     define('USERS_FOLDER', 'users/');
 
+    //Send mail 
+    define('PHPMAILER_EMAIL',"kshitiztyagi1011@gmail.com");
+    define('PHPMAILER_NAME',"NIVAAS");
+
     
  
 
