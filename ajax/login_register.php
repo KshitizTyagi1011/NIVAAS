@@ -137,6 +137,7 @@
                     $_SESSION['uName'] = $u_fetch['name'];
                     $_SESSION['uPic'] = $u_fetch['profile'];
                     $_SESSION['uPhone'] = $u_fetch['phonenum'];
+                    $_SESSION['uEmail'] = $u_fetch['email'];
                     echo 1;
                 }
             }
