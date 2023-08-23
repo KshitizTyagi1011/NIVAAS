@@ -1,5 +1,4 @@
 <?php
-
     $hname = '127.0.0.1:3308';
     $uname = 'root';
     $pass = '';
@@ -103,10 +102,4 @@
             die("Query cannot be prepared - Delete");
         }
     }
-
-
-    
-    
-
-
 ?>
