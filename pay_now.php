@@ -24,6 +24,7 @@
     if(isset($_POST['pay_now']))
     {
         $ORDER_ID = 'ORD_'.$_SESSION['uId'].random_int(11111,9999999);
+        $TXN = 'Tid_'.$_SESSION['uId'].random_int(11111,9999999);
         $CUST_ID = $_SESSION['uId'];
         $TXN_AMOUNT = $_SESSION['room']['payment'];
         $phone =  $_SESSION['uPhone'];
@@ -115,7 +116,7 @@
             data-prefill.name="<?php echo $data['prefill']['name']?>"
             data-prefill.email="<?php echo $data['prefill']['email']?>"
             data-prefill.contact="<?php echo $data['prefill']['contact']?>"
-            data-notes.shopping_order_id="<?php echo 'Tid_'.$_SESSION['uId'].random_int(11111,9999999); ?>"
+            data-notes.shopping_order_id="<?php echo $TXN;?>"
             data-order_id="<?php echo $data['order_id']?>"
             <?php if ($displayCurrency !== 'INR') { ?> data-display_amount="<?php echo $data['display_amount']?>" <?php } ?>
             <?php if ($displayCurrency !== 'INR') { ?> data-display_currency="<?php echo $data['display_currency']?>" <?php } ?>
@@ -174,7 +175,7 @@ body{
 }
         </style>
         <!-- Any extra fields to be submitted with the form but not sent to Razorpay -->
-        <input type="hidden" name="shopping_order_id" value="<?php echo 'Tid_'.$_SESSION['uId'].random_int(11111,9999999); ?>">
+        <input type="hidden" name="shopping_order_id" value="<?php echo $TXN; ?>">
            <!-- Include ORDER_ID as a hidden input -->
             <input type="hidden" name="ORDER_ID" value="<?php echo $ORDER_ID; ?>">
             <input type="hidden" name="TXN_AMOUNT" value="<?php echo  $TXN_AMOUNT; ?>">
